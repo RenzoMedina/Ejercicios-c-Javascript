@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.palindronoma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paliTitle{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.contextPal{
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn input, .btn button {
+    margin-top: 10px;
+    height: 45px;
+    padding: .5em;
+    text-align: center;
+    border:1px solid rgba(0, 0, 0, .5);
+    border-radius: 14px;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+.btn input{
+    width: 400px;
+}
+.btn input:focus{
+    outline:none;
+}
+.btn button{
+    width: 150px;
+    background: rgba(0, 0, 0, .455);
+    color:#fff;
+    margin-left: 10px;
+    border: none;
+}
+.btn button:hover{
+    cursor: pointer;
+    transform: scale(.93);
+    transition: .4s;
+}
+.box{
+    margin-top: 10px;
+    margin-right: 150px;
+    font-size: 1.3rem;
+}
+.green{
+    color:green;
+    font-weight: 700;
+}
+.red{
+    color:red;
+    font-weight: 700;
+}
+hr{
+    width: 90%;
+    margin:10px 10px 60px 60px;    
+}
