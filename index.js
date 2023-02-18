@@ -1,7 +1,16 @@
 const valuePali= document.getElementById("valuePali")
 const btnPali = document.getElementById("btnPali")
 const rpta= document.getElementById('rpta')
+ 
+//event key Enter
+valuePali.addEventListener('keypress', (e)=>{
+    let word= valuePali.value
+    if(e.key === "Enter"){
+        rpta.innerHTML=(wordPalindronoma(word))
+    }
+})
 
+//event Mouse Click
 btnPali.addEventListener("click", function (){
     let word = valuePali.value
     rpta.innerHTML=(wordPalindronoma(word))
@@ -30,8 +39,8 @@ btnPali.addEventListener("click", function (){
 //     }
 
 // }
-//Second function 
 
+//Second function 
 function wordPalindronoma(word){
     let words = ""
 
