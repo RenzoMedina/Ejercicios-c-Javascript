@@ -1,13 +1,18 @@
 const valuePali= document.getElementById("valuePali")
 const btnPali = document.getElementById("btnPali")
 const rpta= document.getElementById('rpta')
- 
+const deletPali = document.getElementById('deletPali') 
 //event key Enter
 valuePali.addEventListener('keypress', (e)=>{
     let word= valuePali.value
     if(e.key === "Enter"){
         rpta.innerHTML=(wordPalindronoma(word))
     }
+})
+
+//event clean 
+deletPali.addEventListener("click", ()=>{
+    rpta.innerHTML=""
 })
 
 //event Mouse Click
